@@ -1,0 +1,20 @@
+com/example/movieprojectkotlin/databinding/ActivityMainBinding.java
+ com.example.movieprojectkotlin.databinding.ActivityMainBinding
+com/example/movieprojectkotlin/databinding/FragmentTopRatedBinding.java
+ com.example.movieprojectkotlin.databinding.FragmentTopRatedBinding
+com/example/movieprojectkotlin/databinding/FragmentPopularBinding.java
+ com.example.movieprojectkotlin.databinding.FragmentPopularBinding
+com/example/movieprojectkotlin/databinding/FragmentMoviesInfoBinding.java
+ com.example.movieprojectkotlin.databinding.FragmentMoviesInfoBinding
+com/example/movieprojectkotlin/databinding/PopularMovieItemBinding.java
+ com.example.movieprojectkotlin.databinding.PopularMovieItemBinding
+com/example/movieprojectkotlin/BuildConfig.java
+ com.example.movieprojectkotlin.BuildConfig
+com/example/movieprojectkotlin/databinding/TopRatedItemViewBinding.java
+ com.example.movieprojectkotlin.databinding.TopRatedItemViewBinding
+com/example/movieprojectkotlin/databinding/ActivitySplashScreenBinding.java
+ com.example.movieprojectkotlin.databinding.ActivitySplashScreenBinding
+com/example/movieprojectkotlin/databinding/FavouritesMovieItemBinding.java
+ com.example.movieprojectkotlin.databinding.FavouritesMovieItemBinding
+com/example/movieprojectkotlin/databinding/FragmentFavouritesBinding.java
+ com.example.movieprojectkotlin.databinding.FragmentFavouritesBinding
