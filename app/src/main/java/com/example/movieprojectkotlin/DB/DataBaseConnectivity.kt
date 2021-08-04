@@ -60,4 +60,11 @@ class DataBaseConnectivity(context: Context): SQLiteOpenHelper(context, DATABASE
         val db = this.writableDatabase
         return db.rawQuery("SELECT * FROM $TABLE_NAME ORDER BY $COL2", null)
     }
+
+    fun checkIfDBContainsId(idToCheck: Int) : Boolean {
+        val db = this.writableDatabase
+       db.execSQL("SELECT movieID FROM $TABLE_NAME WHERE movieID = $idToCheck THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT) END", null)
+
+        return true
+    }
 }

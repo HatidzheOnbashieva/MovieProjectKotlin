@@ -17,12 +17,12 @@ class MovieInfoViewModel(val context: Context) : ViewModel() {
     fun addDataToLocalDB(movie: Movie, context: Context){
         var result: Boolean = dataBaseConnectivity.addData(movie.id, movie.title, movie.overview, movie.originalTitle, movie.rating, movie.releaseDate, movie.imageUrl)
         if(result == false){
-            Toast.makeText(context, "Unsuccessful data insert in the database!", Toast.LENGTH_LONG)
+            Toast.makeText(context.applicationContext, "Unsuccessful data insert in the database!", Toast.LENGTH_LONG)
                 .show()
         }
         else{
             Toast.makeText(
-                context,
+                context.applicationContext,
                 "You successfully added this movie to your favourites list!",
                 Toast.LENGTH_SHORT
             ).show()
@@ -32,12 +32,12 @@ class MovieInfoViewModel(val context: Context) : ViewModel() {
     fun removeItem(movieID: Int, context: Context) {
         var result: Boolean = dataBaseConnectivity.removeData(movieID)
         if(result == false){
-            Toast.makeText(context, "Unsuccessful remove!", Toast.LENGTH_LONG)
+            Toast.makeText(context.applicationContext, "Unsuccessful remove!", Toast.LENGTH_LONG)
                 .show()
         }
         else{
             Toast.makeText(
-                context,
+                context.applicationContext,
                 "Successfully removed item!",
                 Toast.LENGTH_SHORT
             ).show()

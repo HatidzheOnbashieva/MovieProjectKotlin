@@ -59,7 +59,6 @@ class MoviesInfoFragment : Fragment() {
             }
         })
 
-
         viewBinding?.back?.setOnClickListener(View.OnClickListener {
 
             parentFragmentManager.popBackStack()
@@ -84,7 +83,7 @@ class MoviesInfoFragment : Fragment() {
                 favouriteFlag = false
 
             }else{
-                moviesInfoViewModel.addDataToLocalDB(movie, requireContext())
+                moviesInfoViewModel.addDataToLocalDB(movie,requireContext())
                 viewBinding?.favourite?.setImageResource(R.drawable.ic_favourite)
                 favouriteFlag = true
             }

@@ -6,14 +6,9 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.movieprojectkotlin.Model.Movie
 import com.example.movieprojectkotlin.databinding.FavouritesMovieItemBinding
 
-class FavouritesAdapter(var _movies: List<Movie>, private val onMovieRowClick: (Movie) -> Unit): RecyclerView.Adapter<FavouritesViewHolder>() {
+class FavouritesAdapter(private val onMovieRowClick: (Movie) -> Unit): RecyclerView.Adapter<FavouritesViewHolder>() {
 
-    val movies
-        get() = _movies
-
-    init {
-        this.movies
-    }
+    var movies: ArrayList<Movie> = arrayListOf()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FavouritesViewHolder {
         val viewBinding = FavouritesMovieItemBinding.inflate(LayoutInflater.from(parent.context), parent, false)
@@ -23,18 +18,11 @@ class FavouritesAdapter(var _movies: List<Movie>, private val onMovieRowClick: (
 
     override fun onBindViewHolder(holder: FavouritesViewHolder, position: Int) {
         val movieData = movies[position]
-        holder.setFavouritesRowData(movieData, onMovieRowClick)
 
-       // val ctx = holder.itemView.context
+        holder.setFavouritesRowData(movieData, onMovieRowClick)
     }
 
     override fun getItemCount(): Int {
         return movies.size
     }
-
-    fun updateAdapter(newMovies: List<Movie>){
-            this._movies = newMovies
-            notifyDataSetChanged()
-    }
-
 }

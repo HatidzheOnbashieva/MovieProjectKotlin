@@ -1,30 +1,18 @@
 package com.example.movieprojectkotlin.fragments.topRatedFragment.lists
 
-import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.movieprojectkotlin.OnItemClickListener
-import com.example.movieprojectkotlin.R
+import com.example.movieprojectkotlin.Model.Movie
+import com.example.movieprojectkotlin.databinding.TopRatedItemViewBinding
+import com.squareup.picasso.Picasso
 
-class TopRatedViewHolder(view: View): RecyclerView.ViewHolder(view), View.OnClickListener {
+class TopRatedViewHolder(private val viewBinding: TopRatedItemViewBinding): RecyclerView.ViewHolder(viewBinding.root) {
 
-    var poster: ImageView
-    var title: TextView
-    var itemClickListener: OnItemClickListener? = null
+    fun setTopRatedRowData(movieRowData: Movie, onMovieRowClick: (Movie) -> Unit){
+        Picasso.get().load("https://image.tmdb.org/t/p/w500" + movieRowData.imageUrl).into(viewBinding.infoMoviePoster)
+        viewBinding.infoMovieTitle.text = movieRowData.title
 
-    init{
-        poster = itemView.findViewById(R.id.infoMoviePoster)
-        title = itemView.findViewById(R.id.infoMovieTitle)
-        itemView.setOnClickListener(this)
+        viewBinding.root.setOnClickListener {
+            onMovieRowClick.invoke(movieRowData)
+        }
     }
-
-    override fun onClick(view: View?) {
-        itemClickListener?.onItemClickListener(view, layoutPosition)
-    }
-
-    fun setOnItemClickListener(itemClick: OnItemClickListener){
-        itemClickListener = itemClick
-    }
-
 }

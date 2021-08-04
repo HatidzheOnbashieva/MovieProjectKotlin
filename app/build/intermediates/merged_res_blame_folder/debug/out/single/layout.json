@@ -4,24 +4,12 @@
         "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\fragment_favourites.xml"
     },
     {
-        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\favourites_item.xml",
-        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\favourites_item.xml"
+        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
+        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
         "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\favourites_movie_item.xml",
         "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\favourites_movie_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\movie_info_item.xml",
-        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\movie_info_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\movie_item.xml",
-        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\movie_item.xml"
-    },
-    {
-        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash_screen.xml",
-        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\activity_splash_screen.xml"
     },
     {
         "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_movies_info.xml",

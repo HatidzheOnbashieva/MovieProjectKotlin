@@ -14,50 +14,174 @@
 11-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:5:5-67
 11-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:5:22-64
 12
-13    <application
-13-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:7:5-22:19
-14        android:allowBackup="true"
-14-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:8:9-35
-15        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-15-->[androidx.core:core:1.6.0] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\ba1d9cdeace3374a3d1f11cb4c3f7039\core-1.6.0\AndroidManifest.xml:24:18-86
-16        android:debuggable="true"
-17        android:icon="@mipmap/ic_launcher"
-17-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:9:9-43
-18        android:label="@string/app_name"
-18-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:10:9-41
-19        android:roundIcon="@mipmap/ic_launcher_round"
-19-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:11:9-54
-20        android:supportsRtl="true"
-20-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:12:9-35
-21        android:testOnly="true"
-22        android:theme="@style/Theme.MovieProjectKotlin" >
-22-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:13:9-56
-23        <activity android:name="com.example.movieprojectkotlin.MainActivity" />
-23-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:14:9-59
-23-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:14:19-47
-24        <activity android:name="com.example.movieprojectkotlin.SplashScreen" >
-24-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:15:9-21:20
-24-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:15:19-47
-25            <intent-filter>
-25-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:16:13-20:29
-26                <action android:name="android.intent.action.MAIN" />
-26-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:17:17-69
-26-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:17:25-66
-27
-28                <category android:name="android.intent.category.LAUNCHER" />
-28-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:19:17-77
-28-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:19:27-74
-29            </intent-filter>
-30        </activity>
-31
-32        <provider
-32-->[com.squareup.picasso:picasso:2.71828] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\60fde4ba39c56eb60cc2408e6cbde2de\picasso-2.71828\AndroidManifest.xml:8:9-11:40
-33            android:name="com.squareup.picasso.PicassoProvider"
-33-->[com.squareup.picasso:picasso:2.71828] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\60fde4ba39c56eb60cc2408e6cbde2de\picasso-2.71828\AndroidManifest.xml:9:13-64
-34            android:authorities="com.example.movieprojectkotlin.com.squareup.picasso"
-34-->[com.squareup.picasso:picasso:2.71828] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\60fde4ba39c56eb60cc2408e6cbde2de\picasso-2.71828\AndroidManifest.xml:10:13-72
-35            android:exported="false" />
-35-->[com.squareup.picasso:picasso:2.71828] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\60fde4ba39c56eb60cc2408e6cbde2de\picasso-2.71828\AndroidManifest.xml:11:13-37
-36    </application>
-37
-38</manifest>
+13    <!-- To store the heap dumps and leak analysis results. -->
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:23:5-80
+14-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:23:22-77
+15    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- To allow starting foreground services on Android P+ - https://developer.android.com/preview/behavior-changes#fg-svc -->
+15-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:24:5-81
+15-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:24:22-78
+16    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+16-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:26:5-77
+16-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:26:22-74
+17
+18    <application
+18-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:7:5-22:19
+19        android:allowBackup="true"
+19-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:8:9-35
+20        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+20-->[androidx.core:core:1.6.0] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\ba1d9cdeace3374a3d1f11cb4c3f7039\core-1.6.0\AndroidManifest.xml:24:18-86
+21        android:debuggable="true"
+22        android:icon="@mipmap/ic_launcher"
+22-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:9:9-43
+23        android:label="@string/app_name"
+23-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:10:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:11:9-54
+25        android:supportsRtl="true"
+25-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:12:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.MovieProjectKotlin" >
+27-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:13:9-56
+28        <activity android:name="com.example.movieprojectkotlin.MainActivity" />
+28-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:14:9-59
+28-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:14:19-47
+29        <activity android:name="com.example.movieprojectkotlin.SplashScreen" >
+29-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:15:9-21:20
+29-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:15:19-47
+30            <intent-filter>
+30-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:16:13-20:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:17:17-69
+31-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:17:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:19:17-77
+33-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:19:27-74
+34            </intent-filter>
+35        </activity>
+36
+37        <service
+37-->[com.squareup.leakcanary:leakcanary-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\a7225411df1822ce93ac0e76337e4e06\leakcanary-android-2.7\AndroidManifest.xml:23:9-25:40
+38            android:name="leakcanary.internal.HeapAnalyzerService"
+38-->[com.squareup.leakcanary:leakcanary-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\a7225411df1822ce93ac0e76337e4e06\leakcanary-android-2.7\AndroidManifest.xml:24:13-67
+39            android:exported="false" />
+39-->[com.squareup.leakcanary:leakcanary-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\a7225411df1822ce93ac0e76337e4e06\leakcanary-android-2.7\AndroidManifest.xml:25:13-37
+40
+41        <provider
+41-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:29:9-37:20
+42            android:name="leakcanary.internal.LeakCanaryFileProvider"
+42-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:30:13-70
+43            android:authorities="com.squareup.leakcanary.fileprovider.com.example.movieprojectkotlin"
+43-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:31:13-88
+44            android:exported="false"
+44-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:32:13-37
+45            android:grantUriPermissions="true" >
+45-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:33:13-47
+46            <meta-data
+46-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:34:13-36:66
+47                android:name="android.support.FILE_PROVIDER_PATHS"
+47-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:35:17-67
+48                android:resource="@xml/leak_canary_file_paths" />
+48-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:36:17-63
+49        </provider>
+50
+51        <activity
+51-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:39:9-44:66
+52            android:name="leakcanary.internal.activity.LeakActivity"
+52-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:40:13-69
+53            android:icon="@mipmap/leak_canary_icon"
+53-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:41:13-52
+54            android:label="@string/leak_canary_display_activity_label"
+54-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:42:13-71
+55            android:taskAffinity="com.squareup.leakcanary.com.example.movieprojectkotlin"
+55-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:43:13-76
+56            android:theme="@style/leak_canary_LeakCanary.Base" />
+56-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:44:13-63
+57
+58        <activity-alias
+58-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:46:9-63:26
+59            android:name="leakcanary.internal.activity.LeakLauncherActivity"
+59-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:47:13-77
+60            android:banner="@drawable/leak_canary_tv_icon"
+60-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:48:13-59
+61            android:enabled="@bool/leak_canary_add_launcher_icon"
+61-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:49:13-66
+62            android:exported="true"
+62-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:50:13-36
+63            android:icon="@mipmap/leak_canary_icon"
+63-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:51:13-52
+64            android:label="@string/leak_canary_display_activity_label"
+64-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:52:13-71
+65            android:targetActivity="leakcanary.internal.activity.LeakActivity"
+65-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:53:13-79
+66            android:taskAffinity="com.squareup.leakcanary.com.example.movieprojectkotlin"
+66-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:54:13-76
+67            android:theme="@style/leak_canary_LeakCanary.Base" >
+67-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:55:13-63
+68            <intent-filter>
+68-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:56:13-62:29
+69                <action android:name="android.intent.action.MAIN" />
+69-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:17:17-69
+69-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:17:25-66
+70
+71                <category android:name="android.intent.category.LAUNCHER" />
+71-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:19:17-77
+71-->C:\Users\HatidzheOnbashieva\AndroidStudioProjects\MovieProjectKotlin\app\src\main\AndroidManifest.xml:19:27-74
+72                <!-- Android TV launcher intent -->
+73                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+73-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:61:17-86
+73-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:61:27-83
+74            </intent-filter>
+75        </activity-alias>
+76
+77        <activity
+77-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:65:9-71:68
+78            android:name="leakcanary.internal.RequestStoragePermissionActivity"
+78-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:66:13-80
+79            android:excludeFromRecents="true"
+79-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:67:13-46
+80            android:icon="@mipmap/leak_canary_icon"
+80-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:68:13-52
+81            android:label="@string/leak_canary_storage_permission_activity_label"
+81-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:69:13-82
+82            android:taskAffinity="com.squareup.leakcanary.com.example.movieprojectkotlin"
+82-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:70:13-76
+83            android:theme="@style/leak_canary_Theme.Transparent" />
+83-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:71:13-65
+84
+85        <receiver android:name="leakcanary.internal.NotificationReceiver" />
+85-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:73:9-77
+85-->[com.squareup.leakcanary:leakcanary-android-core:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\77110e73055f1a0f8fb6f656b65a69cd\leakcanary-android-core-2.7\AndroidManifest.xml:73:19-74
+86
+87        <provider
+87-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\08da6c849f18a3a3401a76aa2ad47a2e\leakcanary-object-watcher-android-2.7\AndroidManifest.xml:8:9-12:40
+88            android:name="leakcanary.internal.AppWatcherInstaller$MainProcess"
+88-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\08da6c849f18a3a3401a76aa2ad47a2e\leakcanary-object-watcher-android-2.7\AndroidManifest.xml:9:13-79
+89            android:authorities="com.example.movieprojectkotlin.leakcanary-installer"
+89-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\08da6c849f18a3a3401a76aa2ad47a2e\leakcanary-object-watcher-android-2.7\AndroidManifest.xml:10:13-72
+90            android:enabled="@bool/leak_canary_watcher_auto_install"
+90-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\08da6c849f18a3a3401a76aa2ad47a2e\leakcanary-object-watcher-android-2.7\AndroidManifest.xml:11:13-69
+91            android:exported="false" />
+91-->[com.squareup.leakcanary:leakcanary-object-watcher-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\08da6c849f18a3a3401a76aa2ad47a2e\leakcanary-object-watcher-android-2.7\AndroidManifest.xml:12:13-37
+92        <provider
+92-->[com.squareup.leakcanary:plumber-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\ebe2218efe8a380f940dc4b460caed0e\plumber-android-2.7\AndroidManifest.xml:8:9-12:40
+93            android:name="leakcanary.internal.PlumberInstaller"
+93-->[com.squareup.leakcanary:plumber-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\ebe2218efe8a380f940dc4b460caed0e\plumber-android-2.7\AndroidManifest.xml:9:13-64
+94            android:authorities="com.example.movieprojectkotlin.plumber-installer"
+94-->[com.squareup.leakcanary:plumber-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\ebe2218efe8a380f940dc4b460caed0e\plumber-android-2.7\AndroidManifest.xml:10:13-69
+95            android:enabled="@bool/leak_canary_plumber_auto_install"
+95-->[com.squareup.leakcanary:plumber-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\ebe2218efe8a380f940dc4b460caed0e\plumber-android-2.7\AndroidManifest.xml:11:13-69
+96            android:exported="false" />
+96-->[com.squareup.leakcanary:plumber-android:2.7] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\ebe2218efe8a380f940dc4b460caed0e\plumber-android-2.7\AndroidManifest.xml:12:13-37
+97        <provider
+97-->[com.squareup.picasso:picasso:2.71828] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\60fde4ba39c56eb60cc2408e6cbde2de\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+98            android:name="com.squareup.picasso.PicassoProvider"
+98-->[com.squareup.picasso:picasso:2.71828] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\60fde4ba39c56eb60cc2408e6cbde2de\picasso-2.71828\AndroidManifest.xml:9:13-64
+99            android:authorities="com.example.movieprojectkotlin.com.squareup.picasso"
+99-->[com.squareup.picasso:picasso:2.71828] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\60fde4ba39c56eb60cc2408e6cbde2de\picasso-2.71828\AndroidManifest.xml:10:13-72
+100            android:exported="false" />
+100-->[com.squareup.picasso:picasso:2.71828] C:\Users\HatidzheOnbashieva\.gradle\caches\transforms-2\files-2.1\60fde4ba39c56eb60cc2408e6cbde2de\picasso-2.71828\AndroidManifest.xml:11:13-37
+101    </application>
+102
+103</manifest>

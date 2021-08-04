@@ -8,25 +8,18 @@ import com.example.movieprojectkotlin.fragments.favouritesFragment.FavouritesFra
 import com.example.movieprojectkotlin.fragments.popularFragment.PopularFragment
 import com.example.movieprojectkotlin.fragments.topRatedFragment.TopRatedFragment
 
-class PagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle, val _numOfTabs: Int?) : FragmentStateAdapter(fragmentManager, lifecycle) {
-
-    val numOfTabs
-        get() = _numOfTabs ?: 0
-
-    init {
-        this.numOfTabs
-    }
+class PagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle, private val numOfTabs: Int) : FragmentStateAdapter(fragmentManager, lifecycle) {
 
     override fun getItemCount(): Int {
         return numOfTabs
     }
 
     override fun createFragment(position: Int): Fragment {
-        when (position) {
-            0 -> return PopularFragment()
-            1 -> return TopRatedFragment()
-            2 -> return FavouritesFragment()
-            else -> return Fragment()
+        return when (position) {
+            0 -> PopularFragment()
+            1 -> TopRatedFragment()
+            2 -> FavouritesFragment()
+            else -> Fragment()
         }
     }
 

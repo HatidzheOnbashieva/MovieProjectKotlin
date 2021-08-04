@@ -1,29 +1,20 @@
 package com.example.movieprojectkotlin.fragments.popularFragment.lists
 
-import android.view.View
-import android.widget.ImageView
-import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.example.movieprojectkotlin.OnItemClickListener
-import com.example.movieprojectkotlin.R
+import com.example.movieprojectkotlin.Model.Movie
+import com.example.movieprojectkotlin.databinding.PopularMovieItemBinding
+import com.squareup.picasso.Picasso
 
 
-class PopularViewHolder(view:View): RecyclerView.ViewHolder(view), View.OnClickListener{
+class PopularViewHolder(private val viewBinding: PopularMovieItemBinding): RecyclerView.ViewHolder(viewBinding.root) {
 
-    var poster: ImageView = itemView.findViewById(R.id.infoMoviePoster)
-    var title: TextView = itemView.findViewById(R.id.infoMovieTitle)
-    var itemClickListener: OnItemClickListener? = null
+    fun setPopularRowData(movieRowData: Movie, onMovieRowClick: (Movie) -> Unit){
+        Picasso.get().load("https://image.tmdb.org/t/p/w500" + movieRowData.imageUrl).into(viewBinding.infoMoviePoster)
+        viewBinding.infoMovieTitle.text = movieRowData.title
 
-    init{
-        itemView.setOnClickListener(this)
-    }
-
-    override fun onClick(view: View?) {
-        itemClickListener?.onItemClickListener(view, layoutPosition)
-    }
-
-    fun setOnItemClickListener(itemClick: OnItemClickListener){
-        itemClickListener = itemClick
+        viewBinding.root.setOnClickListener {
+            onMovieRowClick.invoke(movieRowData)
+        }
     }
 
 }

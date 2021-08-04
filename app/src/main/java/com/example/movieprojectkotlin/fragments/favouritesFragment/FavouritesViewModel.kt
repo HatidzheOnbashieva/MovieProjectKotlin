@@ -37,6 +37,7 @@ class FavouritesViewModel(context: Context) : ViewModel() {
             movieList.postValue(movies) // this line of code prevents the app from crashing when the list is empty
         }
 
+
         return movieList
     }
 }

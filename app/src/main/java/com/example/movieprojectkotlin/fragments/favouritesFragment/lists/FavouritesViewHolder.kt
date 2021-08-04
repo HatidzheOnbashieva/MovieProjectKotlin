@@ -7,7 +7,7 @@ import com.squareup.picasso.Picasso
 
 class FavouritesViewHolder(private val viewBinding: FavouritesMovieItemBinding): RecyclerView.ViewHolder(viewBinding.root) {
 
-    fun setFavouritesRowData(rowData: Movie,onMovieRowClick: (Movie) -> Unit) {
+    fun setFavouritesRowData(rowData: Movie, onMovieRowClick: (Movie) -> Unit) {
 
         Picasso.get().load("https://image.tmdb.org/t/p/w500" + rowData.imageUrl).into(viewBinding.infoMoviePoster)
         viewBinding.infoMovieTitle.text = rowData.title

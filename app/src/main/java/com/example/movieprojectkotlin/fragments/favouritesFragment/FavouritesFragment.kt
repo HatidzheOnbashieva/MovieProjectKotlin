@@ -16,31 +16,13 @@ import com.example.movieprojectkotlin.databinding.FragmentFavouritesBinding
 import com.example.movieprojectkotlin.fragments.favouritesFragment.lists.FavouritesAdapter
 import com.example.movieprojectkotlin.fragments.moviesFragment.MoviesInfoFragment
 
-
 class FavouritesFragment : Fragment() {
-
     private var viewBinding: FragmentFavouritesBinding? = null
     private lateinit var favouritesAdapter: FavouritesAdapter
     private lateinit var movieViewModel: FavouritesViewModel
 
-    //Callback
-    //Callback hell
-    //Android apprentice
-    //Kotlin apprentice
     private val onMovieRowClick : ((Movie) -> Unit) = {
-        val fragment = MoviesInfoFragment()
-        val bundle = Bundle()
-        bundle.putInt("movieID", it.id)
-        bundle.putString("imageURL", it.imageUrl)
-        bundle.putString("title", it.title)
-        bundle.putString("overview", it.overview)
-        bundle.putString("originalTitle", it.originalTitle)
-        bundle.putDouble("rating", it.rating)
-        bundle.putString("releaseDate", it.releaseDate)
-        fragment.arguments = bundle
-
-        val transaction: FragmentTransaction =  parentFragmentManager.beginTransaction()
-        transaction.replace(R.id.mainScreen, fragment).addToBackStack("moviesfragment").commit()
+        goToMoviesInfoFragment(it)
     }
 
     override fun onCreateView(
@@ -53,20 +35,28 @@ class FavouritesFragment : Fragment() {
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        viewBinding?.movieRecyclerViewFavourites?.layoutManager = GridLayoutManager(activity, 2)
+        setUpAdapter()
         movieViewModel = FavouritesViewModel(requireContext())
-        movieViewModel.fetchMoviesList().observeOnce(viewLifecycleOwner, Observer<List<Movie>> { movies ->
-            if(movies != null){
-            favouritesAdapter = FavouritesAdapter(movies, onMovieRowClick)
-            viewBinding?.movieRecyclerViewFavourites?.adapter = favouritesAdapter
-            }
+
+        movieViewModel.fetchMoviesList().observeOnce(viewLifecycleOwner, { movies ->
+                updateList(movies)
         })
     }
 
-    fun updateList(){
-        movieViewModel = FavouritesViewModel(requireContext())
-        movieViewModel.fetchMoviesList().observeOnce(viewLifecycleOwner, Observer<List<Movie>> { movies ->
-            favouritesAdapter.updateAdapter(movies)
+    private fun setUpAdapter(){
+        viewBinding?.movieRecyclerViewFavourites?.layoutManager = GridLayoutManager(activity, 2)
+        favouritesAdapter = FavouritesAdapter(onMovieRowClick)
+        viewBinding?.movieRecyclerViewFavourites?.adapter = favouritesAdapter
+    }
+
+    private fun updateList(movies: List<Movie>){
+        favouritesAdapter.movies = movies as ArrayList<Movie>
+        favouritesAdapter.notifyDataSetChanged()
+    }
+
+    fun favouritesTabSelected(){
+        movieViewModel.fetchMoviesList().observe(viewLifecycleOwner, { movies ->
+            updateList(movies)
         })
     }
 
@@ -77,5 +67,21 @@ class FavouritesFragment : Fragment() {
                 removeObserver(this)
             }
         })
+    }
+
+    private fun goToMoviesInfoFragment(movieData: Movie){
+        val fragment = MoviesInfoFragment()
+        val bundle = Bundle()
+        bundle.putInt("movieID", movieData.id)
+        bundle.putString("imageURL", movieData.imageUrl)
+        bundle.putString("title", movieData.title)
+        bundle.putString("overview", movieData.overview)
+        bundle.putString("originalTitle", movieData.originalTitle)
+        bundle.putDouble("rating", movieData.rating)
+        bundle.putString("releaseDate", movieData.releaseDate)
+        fragment.arguments = bundle
+
+        val transaction: FragmentTransaction = parentFragmentManager.beginTransaction()
+        transaction.replace(R.id.mainScreen, fragment).addToBackStack("moviesPopularFragment").commit()
     }
 }

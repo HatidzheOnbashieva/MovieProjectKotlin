@@ -108,24 +108,24 @@
         "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v24\\ic_arrow_back.xml"
     },
     {
-        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_splashscreen.jpg.flat",
-        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\drawable-v24\\splashscreen.jpg"
-    },
-    {
         "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\res\\merged\\debug\\layout_favourites_movie_item.xml.flat",
         "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\favourites_movie_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_splashscreen.jpg.flat",
+        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\drawable-v24\\splashscreen.jpg"
     },
     {
         "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
         "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
     },
     {
-        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\res\\merged\\debug\\layout_top_rated_item_view.xml.flat",
         "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\layout\\top_rated_item_view.xml"
+    },
+    {
+        "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\HatidzheOnbashieva\\AndroidStudioProjects\\MovieProjectKotlin\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",

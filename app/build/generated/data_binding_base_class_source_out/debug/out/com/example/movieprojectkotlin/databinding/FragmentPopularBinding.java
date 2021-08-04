@@ -4,7 +4,6 @@ package com.example.movieprojectkotlin.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -20,15 +19,11 @@ public final class FragmentPopularBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText editText;
-
-  @NonNull
   public final RecyclerView movieRecyclerViewPopular;
 
-  private FragmentPopularBinding(@NonNull ConstraintLayout rootView, @NonNull EditText editText,
+  private FragmentPopularBinding(@NonNull ConstraintLayout rootView,
       @NonNull RecyclerView movieRecyclerViewPopular) {
     this.rootView = rootView;
-    this.editText = editText;
     this.movieRecyclerViewPopular = movieRecyclerViewPopular;
   }
 
@@ -59,20 +54,13 @@ public final class FragmentPopularBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.editText;
-      EditText editText = rootView.findViewById(id);
-      if (editText == null) {
-        break missingId;
-      }
-
       id = R.id.movieRecyclerViewPopular;
       RecyclerView movieRecyclerViewPopular = rootView.findViewById(id);
       if (movieRecyclerViewPopular == null) {
         break missingId;
       }
 
-      return new FragmentPopularBinding((ConstraintLayout) rootView, editText,
-          movieRecyclerViewPopular);
+      return new FragmentPopularBinding((ConstraintLayout) rootView, movieRecyclerViewPopular);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

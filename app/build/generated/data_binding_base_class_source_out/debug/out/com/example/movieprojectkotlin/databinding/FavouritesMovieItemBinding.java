@@ -5,10 +5,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import com.example.movieprojectkotlin.R;
 import java.lang.NullPointerException;
@@ -17,7 +17,7 @@ import java.lang.String;
 
 public final class FavouritesMovieItemBinding implements ViewBinding {
   @NonNull
-  private final RelativeLayout rootView;
+  private final ConstraintLayout rootView;
 
   @NonNull
   public final ImageView infoMoviePoster;
@@ -25,7 +25,7 @@ public final class FavouritesMovieItemBinding implements ViewBinding {
   @NonNull
   public final TextView infoMovieTitle;
 
-  private FavouritesMovieItemBinding(@NonNull RelativeLayout rootView,
+  private FavouritesMovieItemBinding(@NonNull ConstraintLayout rootView,
       @NonNull ImageView infoMoviePoster, @NonNull TextView infoMovieTitle) {
     this.rootView = rootView;
     this.infoMoviePoster = infoMoviePoster;
@@ -34,7 +34,7 @@ public final class FavouritesMovieItemBinding implements ViewBinding {
 
   @Override
   @NonNull
-  public RelativeLayout getRoot() {
+  public ConstraintLayout getRoot() {
     return rootView;
   }
 
@@ -71,7 +71,7 @@ public final class FavouritesMovieItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FavouritesMovieItemBinding((RelativeLayout) rootView, infoMoviePoster,
+      return new FavouritesMovieItemBinding((ConstraintLayout) rootView, infoMoviePoster,
           infoMovieTitle);
     }
     String missingId = rootView.getResources().getResourceName(id);
