@@ -11,7 +11,8 @@ import com.example.movieprojectkotlin.Model.Movie
 class MovieInfoViewModel(val context: Context) : ViewModel() {
 
     var dataBaseConnectivity: DataBaseConnectivity = DataBaseConnectivity(context)
-    var movieIDList: MutableLiveData<List<Int>> = MutableLiveData()
+    //var movieIDList: MutableLiveData<List<Int>> = MutableLiveData()
+    var valueOfId: MutableLiveData<Boolean> = MutableLiveData()
 
 
     fun addDataToLocalDB(movie: Movie, context: Context){
@@ -44,17 +45,28 @@ class MovieInfoViewModel(val context: Context) : ViewModel() {
         }
     }
 
-    fun fetchIDList() : LiveData<List<Int>> {
-        val data = dataBaseConnectivity.getContents()
-        val movieID: ArrayList<Int> = arrayListOf()
+//    fun fetchIDList() : LiveData<List<Int>> {
+//        val data = dataBaseConnectivity.getContents()
+//        val movieID: ArrayList<Int> = arrayListOf()
+//
+//        if (data.count != 0) {
+//            while (data.moveToNext()) {
+//                movieID.add(data.getInt(0))
+//            }
+//        }
+//        movieIDList.postValue(movieID)
+//
+//        return movieIDList
+//    }
 
-        if (data.count != 0) {
-            while (data.moveToNext()) {
-                movieID.add(data.getInt(0))
-            }
+
+    fun fetchID(movieID: Int) : LiveData<Boolean> {
+        val idCheckedValue = dataBaseConnectivity.checkIfDBContainsId(movieID)
+
+        if(idCheckedValue){
+            valueOfId.postValue(idCheckedValue)
         }
-        movieIDList.postValue(movieID)
 
-        return movieIDList
+        return valueOfId
     }
 }

@@ -38,11 +38,11 @@ class TopRatedFragment : Fragment() {
         var movieViewModel = TopRatedViewModel(requireContext())
 
         movieViewModel.fetchTopRated().observeOnce(requireActivity(), Observer<List<Movie>> { movies ->
-            updateList(movies)
+            updateTopRatedList(movies)
         })
     }
 
-    fun setUpAdapter(){
+    private fun setUpAdapter(){
         viewBinding?.movieRecyclerViewTopRated?.layoutManager = GridLayoutManager(activity, 2)
         topRatedAdapter = TopRatedAdapter{
             goToMoviesInfoFragment(it)
@@ -52,7 +52,7 @@ class TopRatedFragment : Fragment() {
 
     }
 
-    fun updateList(movies: List<Movie>){
+    private fun updateTopRatedList(movies: List<Movie>){
         topRatedAdapter.movies = movies as ArrayList<Movie>
         topRatedAdapter.notifyDataSetChanged()
     }

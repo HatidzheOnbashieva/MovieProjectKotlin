@@ -45,9 +45,7 @@ class DataBaseConnectivity(context: Context): SQLiteOpenHelper(context, DATABASE
         values.put(COL6, releaseDate)
         values.put(COL7, imageURL)
 
-        val result = db.insert(TABLE_NAME, null, values)
-
-        return result != -1L
+        return db.insert(TABLE_NAME, null, values) > 0
 
     }
 
@@ -63,8 +61,9 @@ class DataBaseConnectivity(context: Context): SQLiteOpenHelper(context, DATABASE
 
     fun checkIfDBContainsId(idToCheck: Int) : Boolean {
         val db = this.writableDatabase
-       db.execSQL("SELECT movieID FROM $TABLE_NAME WHERE movieID = $idToCheck THEN CAST(1 AS BIT) ELSE CAST(0 AS BIT) END", null)
-
-        return true
+        if(db.rawQuery("SELECT movieID FROM $TABLE_NAME WHERE movieID = $idToCheck", null).count > 0){
+            return true
+        }
+        return false
     }
 }

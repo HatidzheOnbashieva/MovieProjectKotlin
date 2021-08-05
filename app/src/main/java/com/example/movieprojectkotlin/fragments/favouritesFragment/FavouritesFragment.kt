@@ -39,7 +39,7 @@ class FavouritesFragment : Fragment() {
         movieViewModel = FavouritesViewModel(requireContext())
 
         movieViewModel.fetchMoviesList().observeOnce(viewLifecycleOwner, { movies ->
-                updateList(movies)
+            updateFavouritesList(movies)
         })
     }
 
@@ -49,14 +49,14 @@ class FavouritesFragment : Fragment() {
         viewBinding?.movieRecyclerViewFavourites?.adapter = favouritesAdapter
     }
 
-    private fun updateList(movies: List<Movie>){
+    private fun updateFavouritesList(movies: List<Movie>){
         favouritesAdapter.movies = movies as ArrayList<Movie>
         favouritesAdapter.notifyDataSetChanged()
     }
 
     fun favouritesTabSelected(){
         movieViewModel.fetchMoviesList().observe(viewLifecycleOwner, { movies ->
-            updateList(movies)
+            updateFavouritesList(movies)
         })
     }
 

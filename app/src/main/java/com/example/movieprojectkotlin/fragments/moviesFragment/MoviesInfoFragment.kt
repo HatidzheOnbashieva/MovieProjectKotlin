@@ -52,8 +52,15 @@ class MoviesInfoFragment : Fragment() {
         viewBinding?.movieRating?.text = movieRating.toString()
         viewBinding?.movieReleaseDate?.text = movieReleaseDate
 
-        movieViewModel.fetchIDList().observeOnce(viewLifecycleOwner, Observer<List<Int>>{ ids->
-            if(ids.contains(movieID)){
+//        movieViewModel.fetchIDList().observeOnce(viewLifecycleOwner, Observer<List<Int>>{ ids->
+//            if(ids.contains(movieID)){
+//                favouriteFlag = true
+//                viewBinding?.favourite?.setImageResource(R.drawable.ic_favourite)
+//            }
+//        })
+
+        movieViewModel.fetchID(movieID).observeOnce(viewLifecycleOwner,  {
+            if(it){
                 favouriteFlag = true
                 viewBinding?.favourite?.setImageResource(R.drawable.ic_favourite)
             }
